@@ -56,7 +56,7 @@ class MarketplaceTab extends React.Component {
                 <Tab.Pane key={marketplace.id} eventKey={marketplace.id.toString()}>
                     <CardDeck>
                         {Object.keys(this.state.marketplaces_data[marketplace.id]).map((id) =>
-                        <TemplateCard key={id} data={this.state.marketplaces_data[marketplace.id][id]}/>
+                        <TemplateCard key={id} marketplace_id={marketplace.id} data={this.state.marketplaces_data[marketplace.id][id]}/>
                     )}
 
                     </CardDeck>
