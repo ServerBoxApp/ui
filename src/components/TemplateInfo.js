@@ -53,7 +53,7 @@ class TemplateInfo extends React.Component {
                 applicationRequestBody['TemplateId'] = response.data.id
                 axios.post(process.env.REACT_APP_API_SERVER.concat("/applications"),applicationRequestBody)
                     .then(result => {
-                        console.log(result);
+                        alert("Success!")
                     })
 
         })

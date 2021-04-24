@@ -46,7 +46,7 @@ class TemplateCard extends React.Component {
                         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <TemplateInfo marketplace_id={this.props.marketplace_id} data={this.props.data}/>
+                        <TemplateInfo marketplace_id={this.props.marketplace_id} data={this.props.data} handleHide={this.handleHide}/>
                     </Modal.Body>
                 </Modal>
             </>
